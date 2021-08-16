@@ -1,0 +1,113 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastasia"
+        },
+        "authenticationType": {
+            "value": "password"
+        },
+        "adminPassword": {
+            "value": "P@ssw0rd!23"
+        },
+        "upgrading": {
+            "value": "no"
+        },
+        "vmName": {
+            "value": "VMSS"
+        },
+        "instanceCount": {
+            "value": "1"
+        },
+        "maxInstanceCount": {
+            "value": "2"
+        },
+        "managementServer": {
+            "value": "cpmgmt"
+        },
+        "configurationTemplate": {
+            "value": "vmss_template"
+        },
+        "adminEmail": {
+            "value": ""
+        },
+        "deploymentMode": {
+            "value": "Standard"
+        },
+        "instanceLevelPublicIP": {
+            "value": "yes"
+        },
+        "mgmtInterfaceOpt1": {
+            "value": "eth1-private"
+        },
+        "appLoadDistribution": {
+            "value": "Default"
+        },
+        "ilbLoadDistribution": {
+            "value": "Default"
+        },
+        "availabilityZonesNum": {
+            "value": 0
+        },
+        "remoteAccessVpn": {
+            "value": "no"
+        },
+        "customMetrics": {
+            "value": "yes"
+        },
+        "cloudGuardVersion": {
+            "value": "R81 - Bring Your Own License"
+        },
+        "vmSize": {
+            "value": "Standard_D3_v2"
+        },
+        "sicKey": {
+            "value": "vpn123456789"
+        },
+        "bootstrapScript": {
+            "value": ""
+        },
+        "allowDownloadFromUploadToCheckPoint": {
+            "value": "true"
+        },
+        "diskType": {
+            "value": "Standard_LRS"
+        },
+        "sourceImageVhdUri": {
+            "value": "noCustomUri"
+        },
+        "virtualNetworkName": {
+            "value": "vnet-vmss"
+        },
+        "virtualNetworkAddressPrefixes": {
+            "value": [
+                "10.200.100.0/23"
+            ]
+        },
+        "vnetNewOrExisting": {
+            "value": "existing"
+        },
+        "virtualNetworkExistingRGName": {
+            "value": "azure12312451243_7fb2815088fbc4b5735a49d7_00001"
+        },
+        "subnet1Name": {
+            "value": "subnet-vmss-external"
+        },
+        "subnet1Prefix": {
+            "value": "10.200.100.0/24"
+        },
+        "subnet2Name": {
+            "value": "subnet-vmss-internal"
+        },
+        "subnet2Prefix": {
+            "value": "10.200.101.0/24"
+        },
+        "subnet2StartAddress": {
+            "value": "10.200.101.4"
+        },
+	"_artifactsLocation":  {
+	    "value": "https://raw.githubusercontent.com/CheckPointSW/CloudGuardIaaS/master/azure/templates/"
+	}
+    }
+}
